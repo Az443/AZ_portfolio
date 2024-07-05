@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <h1>UI/UX Design</h1>
+        <button class="btn-87" onclick="window.location.href='index.html';">
+            <span>Home</span>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="img/UI_UX/1.jpg" alt="Application Design Image 1" onclick="openFullScreen(this)">
+            <p><h3>UI/UX Design for Virtual School</h3> UI/UX design caters to virtual schools, ensuring an intuitive and engaging experience for students, teachers, and administrators.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/UI_UX/2.jpg" alt="Application Design Image 2" onclick="openFullScreen(this)">
+            <p><h3>UI/UX Design for Digital Marketing Agency</h3>Our meticulously crafted UI/UX design supports digital marketing agencies by enhancing user interactions, streamlining processes, and optimizing conversions.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/UI_UX/3.JPG" alt="Application Design Image 3" onclick="openFullScreen(this)">
+            <p><h3>UI/UX Design for Restaurant App (Mobile)</h3>Our restaurant app UI/UX design prioritizes user-friendly navigation, seamless ordering, and delightful dining experiences on mobile devices.</p>
+        </div>
+    </main>
+    <footer>
+        <button class="btn-87">
+           <a href="https://wa.me/+963934991392" target="_blank" class="btn-87"><span>Contact</span></a>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </footer>
+
+    <!-- Full Screen Modal -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close" onclick="closeFullScreen()">&times;</span>
+        <img class="modal-content" id="fullScreenImage">
+        <div id="imageDescription"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

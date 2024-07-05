@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Web Development</h1>
+        <button class="btn-87" onclick="window.location.href='index.html';">
+            <span>Home</span>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="img/develop/1.jpg" alt="Application Design Image 1" onclick="openFullScreen(this)">
+            <p><h3>Transportation Dashbourd</h3>The transportation dashboard provides comprehensive information related to transportation services.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/develop/2.jpg" alt="Application Design Image 2" onclick="openFullScreen(this)">
+            <p><h3>Recipes Website</h3>The Recipes Website allows users to explore new recipes, while administrators can add, edit, or delete recipes.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/develop/3.jpg" alt="Application Design Image 3" onclick="openFullScreen(this)">
+            <p><h3>ANON Store</h3>ANON Store is a fashion platform where users can place orders, manage their profiles, and delete orders.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/develop/4.png" alt="Application Design Image 4" onclick="openFullScreen(this)">
+            <p><h3>Restaurant Backend</h3> The Restaurant Backend serves as the administrative hub for restaurant operations. Users can add, delete, or edit orders, as well as book tables.</p>
+        </div>
+    </main>
+    <footer>
+        <button class="btn-87">
+           <a href="https://wa.me/+963934991392" target="_blank" class="btn-87"><span>Contact</span></a>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </footer>
+
+    <!-- Full Screen Modal -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close" onclick="closeFullScreen()">&times;</span>
+        <img class="modal-content" id="fullScreenImage">
+        <div id="imageDescription"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

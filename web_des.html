@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Web design</h1>
+        <button class="btn-87" onclick="window.location.href='index.html';">
+            <span>Home</span>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="img/design/booking(wd).JPG" alt="Application Design Image 1" onclick="openFullScreen(this)">
+            <p><h3>GoChickIn</h3> is a comprehensive hotel reservation project with a user-friendly control panel and web pages to showcase available hotels.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/design/flowerish(wd).JPG" alt="Application Design Image 2" onclick="openFullScreen(this)">
+            <p><h3>Flowerish</h3> is a project dedicated to flowers and home decorations. It aims to create an elegant and inviting experience for users interested in floral arrangements and interior design.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/design/landing_page(wd).JPG" alt="Application Design Image 3" onclick="openFullScreen(this)">
+            <p><h3>Qdeep</h3>Qdeep is the landing page for the QDeep Research Institute. It serves as an introduction to the institute’s cutting-edge research and provides essential information for visitors.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/design/movies(wd).JPG" alt="Application Design Image 4" onclick="openFullScreen(this)">
+            <p><h3>THE ALL MOVIES</h3> is a movie website that utilizes APIs to feature the latest film releases. Users can explore movie details, watch trailers, and stay up-to-date with the ever-evolving world of cinema.</p>
+            
+        </div>
+    </main>
+    <footer>
+        <button class="btn-87">
+           <a href="https://wa.me/+963934991392" target="_blank" class="btn-87"><span>Contact</span></a>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </footer>
+
+    <!-- Full Screen Modal -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close" onclick="closeFullScreen()">&times;</span>
+        <img class="modal-content" id="fullScreenImage">
+        <div id="imageDescription"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

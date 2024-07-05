@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Development</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Application Development</h1>
+        <button class="btn-87" onclick="window.location.href='index.html';">
+            <span>Home</span>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="img/phone/Furqan.png" alt="Application Design Image 1" onclick="openFullScreen(this)">
+            <p><h3>Al-Furqan App</h3>Al-Furqan application allows you to complete the Holy Qur’an with a daily recitation according to the time period you want to complete the Qur’an. It also alerts you daily to remind you to recite the recitation at the time you specify.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/phone/alsaady.png" alt="Application Design Image 2" onclick="openFullScreen(this)">
+            <p><h3>alsaady App</h3> An Android application designed for showcasing cars, featuring functionalities to add or remove vehicles from the list. The application includes a login page for both administrators and clients.</p>
+        </div>
+        <div class="image-container">
+            <img src="img/phone/corseat.png" alt="Application Design Image 3" onclick="openFullScreen(this)">
+            <p><h3>Corseat App</h3> A mobile application for viewing courses, featuring a comprehensive course database. Users can log in or register, and courses can be searched using various methods.</p>
+        </div>
+        <!--<div class="image-container">
+            <img src="img/phone/hertz.jpg" alt="Application Design Image 4" onclick="openFullScreen(this)">
+            <p><h3>Hertz App</h3> mobile applications for Android, writing clean, efficient code and integrating APIs, Testing, and debugging apps.</p>
+        </div>-->
+    </main>
+    <footer>
+        <button class="btn-87">
+           <a href="https://wa.me/+963934991392" target="_blank" class="btn-87"><span>Contact</span></a>
+            <svg aria-hidden><circle></circle></svg>
+        </button>
+    </footer>
+
+    <!-- Full Screen Modal -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close" onclick="closeFullScreen()">&times;</span>
+        <img class="modal-content" id="fullScreenImage">
+        <div id="imageDescription"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
